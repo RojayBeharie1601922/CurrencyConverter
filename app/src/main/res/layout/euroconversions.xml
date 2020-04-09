@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EUROconversions"
+    android:background="@drawable/bgapps">
+
+    <EditText
+        android:id="@+id/EUROtoJMDInput"
+        android:layout_width="match_parent"
+        android:layout_height="70sp"
+        android:textSize="21sp"
+        android:layout_marginTop="120dp"
+        android:layout_centerHorizontal="true"
+        android:hint="Enter EURO amount to be converted to JMD."
+        android:textAlignment="center"
+        tools:ignore="HardcodedText"
+        android:gravity="center_horizontal" />
+
+    <EditText
+        android:id="@+id/EUROtoUSDInput"
+        android:layout_width="match_parent"
+        android:layout_height="70sp"
+        android:layout_below="@+id/submitEUROtoJMD"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="0dp"
+        android:textSize="21sp"
+        android:hint="Enter EURO amount to be converted to USD..."
+        android:textAlignment="center"
+        tools:ignore="HardcodedText"
+        android:gravity="center_horizontal" />
+
+    <Button
+        android:id="@+id/submitEUROtoJMD"
+        android:layout_width="match_parent"
+        android:layout_height="40sp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="0dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/EUROtoJMDInput"
+        android:text=" Convert EURO to JMD"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/submitEUROtoUSD"
+        android:layout_width="match_parent"
+        android:layout_height="40sp"
+        android:layout_marginTop="0dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/EUROtoUSDInput"
+        android:text="Convert EURO to USD"
+        tools:ignore="HardcodedText" />
+
+    <EditText
+        android:id="@+id/EUROtoCANInput"
+        android:layout_width="match_parent"
+        android:layout_height="70sp"
+        android:layout_marginTop="0dp"
+        android:textSize="21sp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/submitEUROtoUSD"
+        tools:ignore="HardcodedText"
+        android:hint="Enter EURO amount to be converted to CAN..."
+        android:textAlignment="center"
+        android:gravity="center_horizontal" />
+
+    <Button
+        android:id="@+id/submitEUROtoCAN"
+        android:layout_width="match_parent"
+        android:layout_height="40sp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/EUROtoCANInput"
+        android:layout_marginTop="0dp"
+        android:text=" Convert EURO to CAN"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/reset"
+        android:layout_width="match_parent"
+        android:layout_height="60sp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/submitEUROtoCAN"
+        android:layout_marginTop="0dp"
+        android:text="Reset all fields"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="match_parent"
+        android:layout_height="70sp"
+        android:layout_marginTop="0dp"
+        android:textSize="28sp"
+        android:layout_centerHorizontal="true"
+        android:hint="Converted amounts appear here..."
+        android:textAlignment="center"
+        tools:ignore="HardcodedText"
+        android:gravity="center_horizontal"
+        android:layout_below="@id/reset"/>
+
+</RelativeLayout>
+
+
+

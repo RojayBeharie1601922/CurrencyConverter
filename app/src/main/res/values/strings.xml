@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Currency Converter</string>
+    <string name="currency_converter">Currency Converter</string>
+    <string name="todo">TODO</string>
+    <string name="jmd_conversions">JMD Conversions</string>
+    <string name="usd_conversions">USD Conversions</string>
+    <string name="euro_conversions">EURO Conversions</string>
+    <string name="can_conversions">CAN Conversions</string>
+</resources>

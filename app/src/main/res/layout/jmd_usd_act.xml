@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".JMDtoUSD"
+    android:background="@drawable/bgapps">
+
+
+    <EditText
+        android:id="@+id/UStoJMDInput"
+        android:layout_width="match_parent"
+        android:layout_height="70sp"
+        android:textSize="21sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="120dp"
+        android:hint="Enter USD amount to be converted to JMD..."
+        android:textAlignment="center"
+        tools:ignore="HardcodedText"
+        android:gravity="center_horizontal" />
+
+    <EditText
+        android:id="@+id/UStoCANInput"
+        android:layout_width="match_parent"
+        android:layout_height="70sp"
+        android:layout_below="@+id/submitUStoJMD"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="0dp"
+        android:textSize="21sp"
+        android:hint="Enter USD amount to be converted to CAN..."
+        android:textAlignment="center"
+        tools:ignore="HardcodedText"
+        android:gravity="center_horizontal" />
+
+    <Button
+        android:id="@+id/submitUStoJMD"
+        android:layout_width="match_parent"
+        android:layout_height="40sp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="0dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/UStoJMDInput"
+        android:text=" Convert USD to JMD"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/submitUStoCAN"
+        android:layout_width="match_parent"
+        android:layout_height="40sp"
+        android:layout_marginTop="0dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/UStoCANInput"
+        android:text="Convert USD to CAN"
+        tools:ignore="HardcodedText" />
+
+    <EditText
+        android:id="@+id/UStoEUROInput"
+        android:layout_width="match_parent"
+        android:layout_height="70sp"
+        android:layout_marginTop="0dp"
+        android:textSize="21sp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/submitUStoCAN"
+        tools:ignore="HardcodedText"
+        android:hint="Enter USD amount to be converted to Euro..."
+        android:textAlignment="center"
+        android:gravity="center_horizontal" />
+
+    <Button
+        android:id="@+id/submitUStoEuro"
+        android:layout_width="match_parent"
+        android:layout_height="40sp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/UStoEUROInput"
+        android:layout_marginTop="0dp"
+        android:text=" Convert USD to Euro"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/reset"
+        android:layout_width="match_parent"
+        android:layout_height="60sp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/submitUStoEuro"
+        android:layout_marginTop="0dp"
+        android:text="Reset all fields"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="match_parent"
+        android:layout_height="70sp"
+        android:layout_marginTop="0dp"
+        android:textSize="28sp"
+        android:layout_centerHorizontal="true"
+        android:hint="Converted amounts appear here..."
+        android:textAlignment="center"
+        tools:ignore="HardcodedText"
+        android:gravity="center_horizontal"
+        android:layout_below="@id/reset"/>
+
+</RelativeLayout>

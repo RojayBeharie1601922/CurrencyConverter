@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CANConversions"
+    android:background="@drawable/bgapps">
+
+
+    <EditText
+        android:id="@+id/CANtoJMDInput"
+        android:layout_width="match_parent"
+        android:layout_height="70sp"
+        android:layout_marginTop="120dp"
+        android:textSize="21sp"
+        android:layout_centerHorizontal="true"
+        android:hint="Enter CAN amount to be converted to JMD."
+        android:textAlignment="center"
+        tools:ignore="HardcodedText"
+        android:gravity="center_horizontal" />
+
+    <EditText
+        android:id="@+id/CANtoUSDInput"
+        android:layout_width="match_parent"
+        android:layout_height="70sp"
+        android:textSize="21sp"
+        android:layout_below="@+id/submitCANtoJMD"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="0dp"
+        android:hint="Enter CAN amount to be converted to USD..."
+        android:textAlignment="center"
+        tools:ignore="HardcodedText"
+        android:gravity="center_horizontal" />
+
+    <Button
+        android:id="@+id/submitCANtoJMD"
+        android:layout_width="match_parent"
+        android:layout_height="40sp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="0dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/CANtoJMDInput"
+        android:text=" Convert CAN to JMD"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/submitCANtoUSD"
+        android:layout_width="match_parent"
+        android:layout_height="40sp"
+        android:layout_marginTop="0dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/CANtoUSDInput"
+        android:text="Convert CAN to USD"
+        tools:ignore="HardcodedText" />
+
+    <EditText
+        android:id="@+id/CANtoEUROInput"
+        android:layout_width="match_parent"
+        android:layout_height="70sp"
+        android:textSize="21sp"
+        android:layout_marginTop="0dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/submitCANtoUSD"
+        tools:ignore="HardcodedText"
+        android:hint="Enter CAN amount to be converted to Euro..."
+        android:textAlignment="center"
+        android:gravity="center_horizontal" />
+
+    <Button
+        android:id="@+id/submitCANtoEuro"
+        android:layout_width="match_parent"
+        android:layout_height="40sp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/CANtoEUROInput"
+        android:layout_marginTop="0dp"
+        android:text=" Convert CAN to Euro"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/reset"
+        android:layout_width="match_parent"
+        android:layout_height="60sp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/submitCANtoEuro"
+        android:layout_marginTop="0dp"
+        android:text="Reset all fields"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="match_parent"
+        android:layout_height="70sp"
+        android:layout_marginTop="0dp"
+        android:textSize="28sp"
+        android:layout_centerHorizontal="true"
+        android:hint="Converted amounts appear here..."
+        android:textAlignment="center"
+        tools:ignore="HardcodedText"
+        android:gravity="center_horizontal"
+        android:layout_below="@id/reset"/>
+
+</RelativeLayout>
+
